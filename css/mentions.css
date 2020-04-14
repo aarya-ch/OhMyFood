@@ -1,0 +1,93 @@
+/*GENERAL*/
+body
+{
+	margin: 0;
+}
+a
+{
+	text-decoration: none;
+}
+/*HEADER*/
+
+header
+{
+	background-color: #579c87;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+header a
+{
+	text-decoration: none;
+	color: #fbcb4e;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: -0.05em;
+}
+
+/*CONTENU*/
+#FlexContainer
+{
+	display: flex;
+	flex-direction: column;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 100px;
+	font-family: 'Montserrat', sans-serif;
+
+
+}
+
+#FlexContainer h1
+{
+	display: flex;
+	justify-content: center;
+	text-transform: uppercase;
+}
+
+#FlexContainer p
+{
+	text-align: justify;
+}
+/*FOOTER*/
+
+footer 
+{
+    position: fixed;
+    height: 50px;
+    background-color: #579c87;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer a
+{
+	color: #fbcb4e;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.wiggle
+{
+	animation:shake 0.2s ease-in-out infinite alternate;
+}
+
+@keyframes shake
+{
+	from 
+	{
+		transform: rotate(4deg);
+	}
+	to
+	{
+		transform:rotate(-4deg);
+	}
+}

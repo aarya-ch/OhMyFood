@@ -1,0 +1,285 @@
+/*GENERAL*/
+body
+{
+	margin: 0;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+#FlexContainer
+{
+	width: 100%;
+	height: auto;
+	display: flex;
+	position: relative;
+	top: 20px;
+	justify-content: space-around;
+	margin-bottom: 50px;
+	flex-flow: wrap;
+}
+
+/*HEADER*/
+header
+{
+	background-color: #579c87;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+header a
+{
+	text-decoration: none;
+	color: #fbcb4e;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: -0.05em;
+}
+
+/*MENUS*/
+.menu
+{
+	height: 350px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	box-shadow: 0px 0px 5px grey;
+}
+
+.menu a
+{
+	transform: scale(1);
+	transition: transform 1s;
+}
+.menu a:hover
+{
+	transform: scale(1.25);
+	opacity: 0.5;
+}
+
+/*MENU 1*/
+.menu1
+{
+	background-color: #ffe6e6;
+}
+
+.menu1 i
+{
+	background: -webkit-gradient(linear, left top, right top, from(#FF7171), to(#FFAE8B));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5em;
+}
+
+.menu1 h2
+{
+	font-family: 'Devonshire', cursive;
+	color: #4D302B;
+	font-size: 1.5em;
+	position: relative;
+	top: 57px;
+	font-weight: normal;
+}
+.menu1 p
+{
+	font-family: 'Sriracha', cursive;
+	text-transform: uppercase;
+	color: #4D302B;
+	font-weight: lighter;
+	position: relative;
+	top: 45px;
+	font-size: 1.5em
+}
+
+/*MENU 2*/
+.menu2
+{
+	background-color: #FFF6FE;
+}
+
+.menu2 h2
+{
+	font-family: 'Croissant One', cursive;
+	background: -webkit-gradient(linear, left top, right top, from(#BD750E), to(#8041FF));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.1em;
+    position: relative;
+    top: 109px;
+}
+
+.menu2 p
+{
+	font-family: 'Lateef', cursive;
+	letter-spacing: 0.05em;
+	color: #BD750E;
+	font-size: 2em;
+	position: relative;
+	top: 92.5px;
+}
+
+/*MENU 3*/
+.menu3
+{
+	background-color: #F2F2F2;
+}
+
+.menu3 h2
+{
+	font-family: 'Dancing Script', cursive;
+	background: -webkit-gradient(linear, left top, right top, from(#0600CD), to(#0088ff));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5em;
+    position: relative;
+    top : 100px;
+}
+
+.menu3 p
+{
+	font-family: 'Kalam', cursive;
+	color: #0088ff;
+	font-weight: lighter;
+	position: relative;
+	top: 97px;
+	font-size: 1.5em;
+}
+
+/*MENU 4*/
+.menu4
+{
+	background-color: #FDFFFC;
+}
+
+.menu4 h2
+{
+	font-family: 'Kaushan Script', cursive;
+	background: -webkit-gradient(linear, left top, right top, from(#03883F), to(#C7FF93));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5em;
+    position: relative;
+    top: 97px;
+}
+
+.menu4 p
+{
+	font-family: 'Kalam', cursive;
+	color: #4CAF50;
+	font-weight: lighter;
+	position: relative;
+	top: 90px;
+	font-size: 1.5em
+}
+/*BOUTON*/
+.btn
+{
+    height: 30px;
+    width: 200px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 10px;
+    background-color: #579c87;
+    margin-bottom: 100px;
+    color: #fbcb4e;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#one
+{
+    animation:apparition 1.5s infinite;
+}
+
+#two
+{
+    animation:apparition 1.5s infinite;
+    animation-delay: 0.2s;
+
+}
+
+#three
+{
+    animation:apparition 1.5s infinite;
+    animation-delay: 0.4s;
+}
+
+@keyframes apparition 
+{
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/*FOOTER*/
+
+footer 
+{
+    position: fixed;
+    height: 50px;
+    background-color: #579c87;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer a
+{
+	color: #fbcb4e;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.wiggle
+{
+	animation:shake 0.2s ease-in-out infinite alternate;
+}
+
+@keyframes shake
+{
+	from 
+	{
+		transform: rotate(4deg);
+	}
+	to
+	{
+		transform:rotate(-4deg);
+	}
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 2000px) 
+{
+	.menu
+	{
+		width:20%;
+	}	
+}
+
+@media screen and (max-width: 1260px) 
+{
+  .menu
+	{
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 635px) 
+{
+  .menu
+	{
+		width: 80%;
+	}
+}
+
