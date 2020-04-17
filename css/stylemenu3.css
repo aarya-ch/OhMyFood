@@ -68,7 +68,7 @@ img
   line-height: 5pt;
   padding-bottom: 5px;
   font-weight: normal;
-  font-size: 1.17em;
+  font-size: 1.1em;
 }
 
 a.underline:before 
@@ -113,11 +113,10 @@ a.underline:hover:before
 	font-family: 'Kalam', cursive;
 }
 
-#FlexContainer p
+.elementmenu p
 {
-	font-size: 0.9em;
+	font-size: 1em;
 }
-
 
 .bloc
 {
@@ -172,15 +171,16 @@ footer a
 }
 
 /*RESPONSIVE*/
-@media screen and (max-width: 530px) 
+@media screen and (max-width: 575px) 
 {
-	.bloc
+	.elementmenu p
 	{
 		line-height: 10pt;
 	}
-	#FlexContainer p
+
+	img
 	{
-		font-size: 0.6em;
+		width: 15%;
 	}
 }
 	
