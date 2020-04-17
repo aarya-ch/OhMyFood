@@ -95,15 +95,19 @@ a.underline:hover:before
   width: 100%;
 }
 /*Carte*/
-i   
+#note1
 {
-	background: -webkit-gradient(linear, left top, right top, from(#FF7171), to(#FFAE8B));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 1.5em;
+	width: 80px;
+	height: 80px;
 }
 
-
+#note2
+{
+	position: relative;
+	top: 10px;
+	width: 50px;
+	height: 50px;
+}
 
 .elementmenu
 {
