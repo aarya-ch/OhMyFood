@@ -25,8 +25,6 @@ h3
 	font-weight: normal;
 }
 
-
-
 /*HEADER*/
 header
 {
@@ -73,7 +71,7 @@ img
   text-decoration: none;
   position: absolute;
   line-height: 5pt;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   font-weight: normal;
   font-size: 1.17em;
 }
@@ -120,9 +118,9 @@ a.underline:hover:before
 	background-color: #FDFFFC;
 }
 
-#FlexContainer p
+.elementmenu p
 {
-	font-size: 0.9em;
+	font-size: 1em;
 }
 
 
@@ -179,15 +177,20 @@ footer a
 }
 
 /*RESPONSIVE*/
-@media screen and (max-width: 565px) 
+@media screen and (max-width: 660px) 
 {
-	.bloc
+	.elementmenu p
 	{
-		line-height: 10pt;
+		line-height: 15pt;
 	}
 
-	#FlexContainer p
+	img
 	{
-		font-size: 0.55em;
+		width: 15%;
+	}
+
+	.droite
+	{
+		width: 15%;
 	}
 }
