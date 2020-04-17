@@ -73,7 +73,7 @@ img
   color: #4D302B;
   position: absolute;
   line-height: 5pt;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   font-weight: bold;
   font-size: 1.17em;
 }
@@ -129,9 +129,9 @@ i
 	background-color: #ffe6e6;
 }
 
-#FlexContainer p
+.elementmenu p
 {
-	font-size: 0.9em;
+	font-size: 1em;
 }
 
 .bloc
@@ -196,28 +196,15 @@ footer a
 }
 
 /*RESPONSIVE*/
-@media screen and (max-width: 550px) 
+@media screen and (max-width: 610px) 
 {
-	#FlexContainer p
+	.elementmenu p
 	{
-		font-size: 0.7em;
+		line-height: 15pt;
 	}
 
-	.bloc
+	img
 	{
-		line-height: 10pt;
-	}
-}
-
-@media screen and (max-width: 420px) 
-{
-	#FlexContainer p
-	{
-		font-size: 0.55em;
-	}
-
-	.bloc
-	{
-		line-height: 10pt;
+		width: 20%;
 	}
 }
